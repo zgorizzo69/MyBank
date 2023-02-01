@@ -1,0 +1,58 @@
+{
+  "name": "MyBank",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Deep dive into solidity development with foundry ",
+  "author": "@zgorizzo69",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zgorizzo69/MyBank/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zgorizzo69/MyBank.git"
+  },
+  "scripts": {
+    "forge": "forge",
+    "build": "forge build",
+    "test": "forge test",
+    "slither:run": "slither . --compile-force-framework foundry",
+    "echidna": "echidna-test . --config echidna.config.yml",
+    "prettier": "prettier --write .",
+    "deploy": "tsx ./scripts/deploy/deploy.ts",
+    "task": "tsx ./scripts/task/task.ts",
+    "clean": "forge clean"
+  },
+  "keywords": [
+    "stablecoin",
+    "erc20",
+    "ethereum",
+    "defi",
+    "bankless",
+    "dollar",
+    "decentralization",
+    "token",
+    "foundry",
+    "forge",
+    "solidity",
+    "algorithmic"
+  ],
+  "lavamoat": {
+    "allowScripts": {
+      "core-js": false,
+      "keccak": false,
+      "secp256k1": false,
+      "web3": false,
+      "bufferutil": false,
+      "utf-8-validate": false,
+      "core-js-pure": false,
+      "postinstall-postinstall": false,
+      "husky": false
+    }
+  },
+  "devDependencies": {
+    "@lavamoat/allow-scripts": "^2.3.0",
+    "prettier-plugin-solidity": "^1.1.1",
+    "prettier": "^2.8.3"
+  }
+}

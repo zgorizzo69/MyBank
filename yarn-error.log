@@ -1,0 +1,85 @@
+Arguments: 
+  /home/zgo/.nvm/versions/node/v14.16.0/bin/node /usr/bin/yarn
+
+PATH: 
+  /home/zgo/.yarn/bin:/home/zgo/.config/yarn/global/node_modules/.bin:/home/zgo/.yarn/bin:/home/zgo/.config/yarn/global/node_modules/.bin:/home/zgo/.nvm/versions/node/v14.16.0/bin:/home/zgo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/usr/local/go/bin:/home/zgo/work/bin:/usr/local/bin:/home/zgo/.oh-my-zsh/plugins/kubetail:/home/zgo/.foundry/bin:/usr/local/go/bin:/home/zgo/work/bin:/usr/local/bin:/home/zgo/.oh-my-zsh/plugins/kubetail:/home/zgo/.foundry/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  14.16.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/zgo/work/src/github.com/zgorizzo69/MyBank/package.json: Unexpected token } in JSON at position 696
+      at JSON.parse (<anonymous>)
+      at /usr/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/usr/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "MyBank",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Deep dive into solidity development with foundry ",
+    "author": "@zgorizzo69",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/zgorizzo69/MyBank/issues"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/zgorizzo69/MyBank.git"
+    }, 
+    "scripts": {
+      "forge": "forge",
+      "build": "forge build",
+      "slither:run": "slither . --compile-force-framework foundry",
+      "echidna": "echidna-test . --config echidna.config.yml",
+      "prettier": "forge fmt",
+      "deploy": "tsx ./scripts/deploy/deploy.ts", 
+      "task": "tsx ./scripts/task/task.ts",
+      "clean": "forge clean",   
+    },
+    "keywords": [
+      "stablecoin",
+      "erc20",
+      "ethereum",
+      "defi",
+      "bankless", 
+      "dollar",
+      "decentralization",
+      "token",
+      "foundry",
+      "forge",
+      "solidity",
+      "algorithmic"
+    ],
+    "lavamoat": {
+      "allowScripts": {
+        "core-js": false,
+        "keccak": false,
+        "secp256k1": false,
+        "web3": false,
+        "bufferutil": false,
+        "utf-8-validate": false,
+        "core-js-pure": false,
+        "postinstall-postinstall": false,
+        "husky": false
+      }
+    },
+    "devDependencies": { 
+      "prettier-plugin-solidity": "^1.1.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
